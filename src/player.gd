@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 const SPEED = 100.0
 const ACCELERATION = 600 
 const FRICTION = 1000
@@ -15,7 +14,6 @@ func _physics_process(delta):
 	var input_axis = Input.get_axis("ui_left", "ui_right")
 	handle_acceleration(input_axis, delta)
 	apply_friction(input_axis, delta)
-
 	move_and_slide()
 
 func apply_gravity(delta):

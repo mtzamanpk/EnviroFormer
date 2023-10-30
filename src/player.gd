@@ -2,7 +2,8 @@ extends CharacterBody2D
 
 
 const SPEED = 100.0
-const ACCELERATION = 400 
+const ACCELERATION = 600 
+const FRICTION = 1000
 const JUMP_VELOCITY = -275.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -24,6 +25,6 @@ func _physics_process(delta):
 	if direction:
 		velocity.x = move_toward(velocity.x, SPEED * direction, ACCELERATION * delta) 
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, FRICTION * delta)
 
 	move_and_slide()

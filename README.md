@@ -1,4 +1,4 @@
 # EnviroFormer
 
-## Scrum 1 Video 
-https://www.youtube.com/watch?v=R1NKNYl2dsw 
+## Project Planning
+[Scrum 1](https://youtu.be/eihzUJq9vtk)

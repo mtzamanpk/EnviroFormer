@@ -41,6 +41,7 @@ func handle_acceleration(input_axis, delta):
 
 func update_animtions(input_axis):
 	if input_axis != 0:
+		animated_sprite_2d.flip_h = (input_axis < 0)
 		animated_sprite_2d.play("run")
 	else:
 		animated_sprite_2d.play("idle")

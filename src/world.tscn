@@ -1,10 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://db20nx0uktiiq"]
+[gd_scene load_steps=4 format=3 uid="uid://db20nx0uktiiq"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_ecqfg"]
 [ext_resource type="PackedScene" uid="uid://cbrwsgv3mkj8w" path="res://player.tscn" id="2_she8v"]
+[ext_resource type="Texture2D" uid="uid://rjwgtv8m5ejr" path="res://orig.png" id="3_8rd6q"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_ecqfg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 320.0
+offset_bottom = 184.0
+color = Color(0, 0, 0, 1)
+
+[node name="Orig" type="Sprite2D" parent="."]
+position = Vector2(160, 80)
+scale = Vector2(0.472222, 0.493827)
+texture = ExtResource("3_8rd6q")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

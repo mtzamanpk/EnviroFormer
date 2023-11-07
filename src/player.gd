@@ -8,9 +8,9 @@ extends CharacterBody2D
 @export var air_resistance = 225
 @export var air_acceleration = 400
 
-
-# Get the gravity from the project settings to be synced with RigidBody nodes.
+var air_jump = false
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
 @onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var coyote_jump_timer = $CoyoteJumpTimer
 
@@ -35,12 +35,18 @@ func apply_gravity(delta):
 		velocity.y += gravity * delta
 
 func handle_jump():
+	if is_on_floor(): air_jump = true
+	
 	if is_on_floor() or coyote_jump_timer.time_left > 0.0:
 		if Input.is_action_just_pressed("ui_accept"):
 			velocity.y = JUMP_VELOCITY
 	if not is_on_floor():
 		if Input.is_action_just_released("ui_accept") and velocity.y < JUMP_VELOCITY / 2:
 			velocity.y = JUMP_VELOCITY / 2
+		
+		if Input.is_action_just_pressed("ui_accept") and air_jump:
+			velocity.y = JUMP_VELOCITY * 0.8
+			air_jump = false
 
 func apply_friction(input_axis, delta):
 	if input_axis == 0 and is_on_floor():

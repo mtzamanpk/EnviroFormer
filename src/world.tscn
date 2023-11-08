@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://db20nx0uktiiq"]
+[gd_scene load_steps=10 format=3 uid="uid://db20nx0uktiiq"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_ecqfg"]
 [ext_resource type="Texture2D" uid="uid://buv1onk2mmwvt" path="res://Nature_environment_01.png" id="2_f0q44"]
 [ext_resource type="PackedScene" uid="uid://cbrwsgv3mkj8w" path="res://player.tscn" id="2_she8v"]
 [ext_resource type="Texture2D" uid="uid://rjwgtv8m5ejr" path="res://orig.png" id="3_8rd6q"]
 [ext_resource type="PackedScene" uid="uid://ca7no5cbgs3e7" path="res://spikes.tscn" id="5_gyri8"]
+[ext_resource type="PackedScene" uid="uid://dfpoy4rdx8f0g" path="res://coin.tscn" id="6_fly2m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6hfnn"]
 texture = ExtResource("2_f0q44")
@@ -1101,7 +1102,7 @@ offset_bottom = 176.0
 color = Color(0, 0, 0, 1)
 
 [node name="Orig" type="Sprite2D" parent="."]
-position = Vector2(177, 64)
+position = Vector2(178, 64)
 scale = Vector2(1.09722, 0.987654)
 texture = ExtResource("3_8rd6q")
 
@@ -1132,3 +1133,24 @@ position = Vector2(112, 144)
 [node name="Spikes2" parent="." instance=ExtResource("5_gyri8")]
 position = Vector2(224, 144)
 scale = Vector2(0.65, 0.65)
+
+[node name="Coin" parent="." instance=ExtResource("6_fly2m")]
+position = Vector2(280, 56)
+
+[node name="Coin2" parent="." instance=ExtResource("6_fly2m")]
+position = Vector2(96, 88)
+
+[node name="Coin3" parent="." instance=ExtResource("6_fly2m")]
+position = Vector2(88, 8)
+
+[node name="Coin4" parent="." instance=ExtResource("6_fly2m")]
+position = Vector2(184, 56)
+
+[node name="Coin5" parent="." instance=ExtResource("6_fly2m")]
+position = Vector2(32, 56)
+
+[node name="Coin6" parent="." instance=ExtResource("6_fly2m")]
+position = Vector2(216, 8)
+
+[node name="Coin7" parent="." instance=ExtResource("6_fly2m")]
+position = Vector2(8, -24)

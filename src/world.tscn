@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://db20nx0uktiiq"]
+[gd_scene load_steps=11 format=3 uid="uid://db20nx0uktiiq"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_ecqfg"]
 [ext_resource type="Texture2D" uid="uid://buv1onk2mmwvt" path="res://Nature_environment_01.png" id="2_f0q44"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://rjwgtv8m5ejr" path="res://orig.png" id="3_8rd6q"]
 [ext_resource type="PackedScene" uid="uid://ca7no5cbgs3e7" path="res://spikes.tscn" id="5_gyri8"]
 [ext_resource type="PackedScene" uid="uid://dfpoy4rdx8f0g" path="res://coin.tscn" id="6_fly2m"]
+[ext_resource type="PackedScene" uid="uid://cvu4uogb2vt5p" path="res://level_completed.tscn" id="7_vu7w3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6hfnn"]
 texture = ExtResource("2_f0q44")
@@ -1154,3 +1155,8 @@ position = Vector2(216, 8)
 
 [node name="Coin7" parent="." instance=ExtResource("6_fly2m")]
 position = Vector2(8, -24)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="LevelCompleted" parent="CanvasLayer" instance=ExtResource("7_vu7w3")]
+visible = false

@@ -1164,4 +1164,13 @@ visible = false
 
 [node name="Garbage" parent="." instance=ExtResource("8_48y0e")]
 top_level = true
-position = Vector2(30, 121)
+position = Vector2(30, 124)
+
+[node name="Garbage2" parent="." instance=ExtResource("8_48y0e")]
+position = Vector2(186, 92)
+
+[node name="Garbage3" parent="." instance=ExtResource("8_48y0e")]
+position = Vector2(294, 92)
+
+[node name="Garbage4" parent="." instance=ExtResource("8_48y0e")]
+position = Vector2(101, 29)

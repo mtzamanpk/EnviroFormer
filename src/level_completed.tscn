@@ -19,5 +19,6 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="CenterContainer"]
 layout_mode = 2
 text = "All Coins Collected, Level Completed!
-Help out your community
-by picking up litter on the streets!"
+Composting food scraps can 
+reduce climate impact while also
+recycling nutrients."

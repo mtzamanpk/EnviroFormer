@@ -1173,4 +1173,4 @@ position = Vector2(186, 92)
 position = Vector2(294, 92)
 
 [node name="Garbage4" parent="." instance=ExtResource("8_48y0e")]
-position = Vector2(101, 29)
+position = Vector2(102, 29)

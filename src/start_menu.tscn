@@ -12,7 +12,7 @@ grow_vertical = 2
 script = ExtResource("1_a1cdp")
 
 [node name="Orig" type="Sprite2D" parent="."]
-position = Vector2(163, 91)
+position = Vector2(161, 90)
 scale = Vector2(0.560764, 0.552469)
 texture = ExtResource("2_hjop3")
 
@@ -20,11 +20,15 @@ texture = ExtResource("2_hjop3")
 layout_mode = 2
 
 [node name="StartGameButton" type="Button" parent="VBoxContainer"]
+modulate = Color(0, 1, 0, 1)
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Start Game"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
+modulate = Color(0, 1, 0, 1)
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Quit Game"
 
 [connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]

@@ -4,4 +4,4 @@ func _on_body_entered(body):
 	queue_free()
 	var Garbages = get_tree().get_nodes_in_group("Garbages")
 	if Garbages.size() == 1:
-		print ("Garbage Collected")
+		Events.garbages_collected.emit()

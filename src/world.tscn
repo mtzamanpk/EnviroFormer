@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://db20nx0uktiiq"]
+[gd_scene load_steps=13 format=3 uid="uid://db20nx0uktiiq"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_ecqfg"]
 [ext_resource type="Texture2D" uid="uid://buv1onk2mmwvt" path="res://Nature_environment_01.png" id="2_f0q44"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://ca7no5cbgs3e7" path="res://spikes.tscn" id="5_gyri8"]
 [ext_resource type="PackedScene" uid="uid://dfpoy4rdx8f0g" path="res://coin.tscn" id="6_fly2m"]
 [ext_resource type="PackedScene" uid="uid://cvu4uogb2vt5p" path="res://level_completed.tscn" id="7_vu7w3"]
+[ext_resource type="PackedScene" uid="uid://brdn26ce383ay" path="res://garbages_collected.tscn" id="8_4eufe"]
 [ext_resource type="PackedScene" uid="uid://hs15busc8mrq" path="res://garbage.tscn" id="8_48y0e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6hfnn"]
@@ -1183,3 +1184,8 @@ position = Vector2(294, 92)
 
 [node name="Garbage4" parent="." instance=ExtResource("8_48y0e")]
 position = Vector2(102, 29)
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="GarbagesCollected" parent="CanvasLayer2" instance=ExtResource("8_4eufe")]
+visible = false

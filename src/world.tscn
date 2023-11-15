@@ -1161,6 +1161,9 @@ scale = Vector2(0.65, 0.65)
 [node name="Coin" parent="." instance=ExtResource("6_fly2m")]
 position = Vector2(280, 56)
 
+[node name="Coin2" parent="." instance=ExtResource("6_fly2m")]
+position = Vector2(34, 67)
+
 [node name="Coin3" parent="." instance=ExtResource("6_fly2m")]
 position = Vector2(88, 8)
 

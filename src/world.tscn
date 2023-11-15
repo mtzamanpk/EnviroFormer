@@ -1139,20 +1139,8 @@ scale = Vector2(0.65, 0.65)
 [node name="Coin" parent="." instance=ExtResource("6_fly2m")]
 position = Vector2(280, 56)
 
-[node name="Coin2" parent="." instance=ExtResource("6_fly2m")]
-position = Vector2(96, 88)
-
 [node name="Coin3" parent="." instance=ExtResource("6_fly2m")]
 position = Vector2(88, 8)
-
-[node name="Coin4" parent="." instance=ExtResource("6_fly2m")]
-position = Vector2(184, 56)
-
-[node name="Coin5" parent="." instance=ExtResource("6_fly2m")]
-position = Vector2(32, 56)
-
-[node name="Coin6" parent="." instance=ExtResource("6_fly2m")]
-position = Vector2(216, 8)
 
 [node name="Coin7" parent="." instance=ExtResource("6_fly2m")]
 position = Vector2(8, -24)

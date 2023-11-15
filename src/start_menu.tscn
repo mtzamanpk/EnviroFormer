@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba20kybuh65j1"]
+
+[ext_resource type="Script" path="res://start_menu.gd" id="1_a1cdp"]
+[ext_resource type="Texture2D" uid="uid://rjwgtv8m5ejr" path="res://orig.png" id="2_hjop3"]
+
+[node name="StartMenu" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a1cdp")
+
+[node name="Orig" type="Sprite2D" parent="."]
+position = Vector2(163, 91)
+scale = Vector2(0.560764, 0.552469)
+texture = ExtResource("2_hjop3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="StartGameButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start Game"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Quit Game"
+
+[connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

@@ -1130,10 +1130,31 @@ position = Vector2(-120, 48)
 shape = SubResource("RectangleShape2D_iboop")
 
 [node name="Spikes" parent="." instance=ExtResource("5_gyri8")]
-position = Vector2(112, 144)
+position = Vector2(112, 150)
+
+[node name="Spikes3" parent="." instance=ExtResource("5_gyri8")]
+position = Vector2(124, 150)
+
+[node name="Spikes4" parent="." instance=ExtResource("5_gyri8")]
+position = Vector2(136, 150)
+
+[node name="Spikes5" parent="." instance=ExtResource("5_gyri8")]
+position = Vector2(149, 150)
 
 [node name="Spikes2" parent="." instance=ExtResource("5_gyri8")]
-position = Vector2(224, 144)
+position = Vector2(224, 147)
+scale = Vector2(0.65, 0.65)
+
+[node name="Spikes7" parent="." instance=ExtResource("5_gyri8")]
+position = Vector2(240, 147)
+scale = Vector2(0.65, 0.65)
+
+[node name="Spikes8" parent="." instance=ExtResource("5_gyri8")]
+position = Vector2(248, 147)
+scale = Vector2(0.65, 0.65)
+
+[node name="Spikes6" parent="." instance=ExtResource("5_gyri8")]
+position = Vector2(232, 147)
 scale = Vector2(0.65, 0.65)
 
 [node name="Coin" parent="." instance=ExtResource("6_fly2m")]

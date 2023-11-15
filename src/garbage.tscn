@@ -9,7 +9,7 @@ size = Vector2(10, 9)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2vmgx"]
 size = Vector2(12, 8)
 
-[node name="Garbage" type="Area2D"]
+[node name="Garbage" type="Area2D" groups=["Garbages"]]
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("1_oqp4k")

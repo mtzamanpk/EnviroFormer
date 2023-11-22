@@ -1135,6 +1135,10 @@ shape = SubResource("RectangleShape2D_iboop")
 [node name="Spikes" parent="." instance=ExtResource("5_gyri8")]
 position = Vector2(112, 150)
 
+[node name="Spikes2" parent="." instance=ExtResource("5_gyri8")]
+position = Vector2(224, 147)
+scale = Vector2(0.65, 0.65)
+
 [node name="Spikes3" parent="." instance=ExtResource("5_gyri8")]
 position = Vector2(124, 150)
 
@@ -1144,8 +1148,8 @@ position = Vector2(136, 150)
 [node name="Spikes5" parent="." instance=ExtResource("5_gyri8")]
 position = Vector2(149, 150)
 
-[node name="Spikes2" parent="." instance=ExtResource("5_gyri8")]
-position = Vector2(224, 147)
+[node name="Spikes6" parent="." instance=ExtResource("5_gyri8")]
+position = Vector2(232, 147)
 scale = Vector2(0.65, 0.65)
 
 [node name="Spikes7" parent="." instance=ExtResource("5_gyri8")]
@@ -1154,10 +1158,6 @@ scale = Vector2(0.65, 0.65)
 
 [node name="Spikes8" parent="." instance=ExtResource("5_gyri8")]
 position = Vector2(248, 147)
-scale = Vector2(0.65, 0.65)
-
-[node name="Spikes6" parent="." instance=ExtResource("5_gyri8")]
-position = Vector2(232, 147)
 scale = Vector2(0.65, 0.65)
 
 [node name="Coin" parent="." instance=ExtResource("6_fly2m")]
@@ -1169,7 +1169,7 @@ position = Vector2(34, 67)
 [node name="Coin3" parent="." instance=ExtResource("6_fly2m")]
 position = Vector2(88, 8)
 
-[node name="Coin7" parent="." instance=ExtResource("6_fly2m")]
+[node name="Coin4" parent="." instance=ExtResource("6_fly2m")]
 position = Vector2(8, -24)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -1184,7 +1184,7 @@ position = Vector2(30, 124)
 [node name="Garbage2" parent="." instance=ExtResource("8_48y0e")]
 position = Vector2(289, 92)
 
-[node name="Garbage4" parent="." instance=ExtResource("8_48y0e")]
+[node name="Garbage3" parent="." instance=ExtResource("8_48y0e")]
 position = Vector2(102, 29)
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]

@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://cvu4uogb2vt5p"]
+[gd_scene format=3 uid="uid://bokhqpxj5d2c0"]
 
-[node name="LevelCompleted" type="ColorRect"]
+[node name="health_collected" type="ColorRect"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -18,8 +18,8 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="CenterContainer"]
 layout_mode = 2
-text = "All Coins Collected, Level Completed!
-Composting food scraps can 
-reduce climate impact while also
-recycling nutrients."
+text = "SDG 3: Good Health
+and well being
+Get vaccinated! Vaccines 
+save lives"
 horizontal_alignment = 1

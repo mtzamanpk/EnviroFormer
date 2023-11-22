@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://db20nx0uktiiq"]
+[gd_scene load_steps=15 format=3 uid="uid://db20nx0uktiiq"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_ecqfg"]
 [ext_resource type="Texture2D" uid="uid://buv1onk2mmwvt" path="res://Nature_environment_01.png" id="2_f0q44"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://cvu4uogb2vt5p" path="res://level_completed.tscn" id="7_vu7w3"]
 [ext_resource type="PackedScene" uid="uid://brdn26ce383ay" path="res://garbages_collected.tscn" id="8_4eufe"]
 [ext_resource type="PackedScene" uid="uid://hs15busc8mrq" path="res://garbage.tscn" id="8_48y0e"]
+[ext_resource type="PackedScene" uid="uid://bak455beibc02" path="res://health.tscn" id="10_5lgfn"]
+[ext_resource type="PackedScene" uid="uid://bokhqpxj5d2c0" path="res://health_collected.tscn" id="11_l07tr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6hfnn"]
 texture = ExtResource("2_f0q44")
@@ -1180,10 +1182,7 @@ top_level = true
 position = Vector2(30, 124)
 
 [node name="Garbage2" parent="." instance=ExtResource("8_48y0e")]
-position = Vector2(186, 92)
-
-[node name="Garbage3" parent="." instance=ExtResource("8_48y0e")]
-position = Vector2(294, 92)
+position = Vector2(289, 92)
 
 [node name="Garbage4" parent="." instance=ExtResource("8_48y0e")]
 position = Vector2(102, 29)
@@ -1191,4 +1190,12 @@ position = Vector2(102, 29)
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
 [node name="GarbagesCollected" parent="CanvasLayer2" instance=ExtResource("8_4eufe")]
+visible = false
+
+[node name="Health" parent="." instance=ExtResource("10_5lgfn")]
+position = Vector2(182, 61)
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+
+[node name="health_collected" parent="CanvasLayer3" instance=ExtResource("11_l07tr")]
 visible = false

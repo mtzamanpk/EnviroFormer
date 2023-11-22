@@ -19,7 +19,7 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="CenterContainer"]
 layout_mode = 2
 text = "SDG 3: Good Health
-and well being
-Get vaccinated! Vaccines 
-save lives"
+and well being.
+Get vaccinated. Vaccines 
+save lives!"
 horizontal_alignment = 1

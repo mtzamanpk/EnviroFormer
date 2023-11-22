@@ -21,3 +21,5 @@ layout_mode = 2
 text = "Reduce your use of paper!
 Avoid printing and sub with
 electronic devices "
+
+[node name="Timer" type="Timer" parent="CenterContainer"]

@@ -17,12 +17,11 @@ func _ready():
 func show_garbages_collected():
 	garbages_collected.show()
 	get_tree().paused = true
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(5.0).timeout
 	get_tree().paused = false
 	garbages_collected.hide()
 
 
 func show_level_completed():
-	garbages_collected.hide()
 	level_completed.show()
 	get_tree().paused = true

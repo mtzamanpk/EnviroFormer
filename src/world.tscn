@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://db20nx0uktiiq"]
+[gd_scene load_steps=17 format=3 uid="uid://db20nx0uktiiq"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_ecqfg"]
 [ext_resource type="Texture2D" uid="uid://buv1onk2mmwvt" path="res://Nature_environment_01.png" id="2_f0q44"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://hs15busc8mrq" path="res://garbage.tscn" id="8_48y0e"]
 [ext_resource type="PackedScene" uid="uid://bak455beibc02" path="res://health.tscn" id="10_5lgfn"]
 [ext_resource type="PackedScene" uid="uid://bokhqpxj5d2c0" path="res://health_collected.tscn" id="11_l07tr"]
+[ext_resource type="PackedScene" uid="uid://djmnkv3sa3aco" path="res://luw_collected.tscn" id="12_neybm"]
+[ext_resource type="PackedScene" uid="uid://cl1qtsmx0q7r" path="res://luw.tscn" id="13_n6ttf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6hfnn"]
 texture = ExtResource("2_f0q44")
@@ -1163,9 +1165,6 @@ scale = Vector2(0.65, 0.65)
 [node name="Coin" parent="." instance=ExtResource("6_fly2m")]
 position = Vector2(280, 56)
 
-[node name="Coin2" parent="." instance=ExtResource("6_fly2m")]
-position = Vector2(34, 67)
-
 [node name="Coin3" parent="." instance=ExtResource("6_fly2m")]
 position = Vector2(88, 8)
 
@@ -1199,3 +1198,11 @@ position = Vector2(182, 61)
 
 [node name="health_collected" parent="CanvasLayer3" instance=ExtResource("11_l07tr")]
 visible = false
+
+[node name="CanvasLayer4" type="CanvasLayer" parent="."]
+
+[node name="luw_collected" parent="CanvasLayer4" instance=ExtResource("12_neybm")]
+visible = false
+
+[node name="LUW" parent="." instance=ExtResource("13_n6ttf")]
+position = Vector2(34, 53)

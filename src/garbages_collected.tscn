@@ -19,6 +19,6 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="CenterContainer"]
 layout_mode = 2
 text = "Reduce your use of paper!
-Avoid printing and sub with
-electronic devices "
+Avoid printing and substitute
+ them with electronic devices "
 horizontal_alignment = 1

@@ -18,6 +18,7 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="CenterContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
 text = "All Coins Collected, Level Completed!
 Composting food scraps can 
 reduce climate impact while also

@@ -19,26 +19,29 @@ func _ready():
 	
 
 func show_luw_collected():
+	health_collected.hide()
+	garbages_collected.hide()
 	luw_collected.show()
-	get_tree().paused = true
 	await get_tree().create_timer(5.0).timeout
-	get_tree().paused = false
 	luw_collected.hide()
 
 func show_health_collected():
+	luw_collected.hide()
+	garbages_collected.hide()
 	health_collected.show()
-	get_tree().paused = true
 	await get_tree().create_timer(5.0).timeout
-	get_tree().paused = false
 	health_collected.hide()
 
 func show_garbages_collected():
+	health_collected.hide()
+	luw_collected.hide()
 	garbages_collected.show()
-	get_tree().paused = true
 	await get_tree().create_timer(5.0).timeout
-	get_tree().paused = false
 	garbages_collected.hide()
 
 func show_level_completed():
+	garbages_collected.hide()
+	health_collected.hide()
+	luw_collected.hide()
 	level_completed.show()
 	get_tree().paused = true

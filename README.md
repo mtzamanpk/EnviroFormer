@@ -3,6 +3,7 @@
 
 ## Project Planning
 [Scrum 1](https://www.youtube.com/watch?v=R1NKNYl2dsw)
+
 [Scrum 2](https://github.com/mtzamanpk/EnviroFormer/tree/main/Scrums/Scrum%202)
 
 ## GitHub Kanban

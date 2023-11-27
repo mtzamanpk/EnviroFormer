@@ -44,4 +44,6 @@ func show_level_completed():
 	health_collected.hide()
 	luw_collected.hide()
 	level_completed.show()
-	get_tree().paused = true
+
+func _on_level_completed_quit():
+	get_tree().change_scene_to_file("res://start_menu.tscn")

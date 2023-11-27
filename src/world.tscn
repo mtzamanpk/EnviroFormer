@@ -1170,6 +1170,7 @@ position = Vector2(448, 56)
 position = Vector2(8, -24)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 4
 
 [node name="LevelCompleted" parent="CanvasLayer" instance=ExtResource("7_vu7w3")]
 visible = false
@@ -1185,6 +1186,7 @@ position = Vector2(296, 92)
 position = Vector2(102, 29)
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = 5
 
 [node name="GarbagesCollected" parent="CanvasLayer2" instance=ExtResource("8_4eufe")]
 visible = false
@@ -1193,6 +1195,7 @@ visible = false
 position = Vector2(384, 26)
 
 [node name="CanvasLayer3" type="CanvasLayer" parent="."]
+layer = 6
 
 [node name="health_collected" parent="CanvasLayer3" instance=ExtResource("11_l07tr")]
 visible = false
@@ -1231,3 +1234,6 @@ position = Vector2(544, 168)
 
 [node name="Spikes16" parent="." instance=ExtResource("5_gyri8")]
 position = Vector2(552, 168)
+
+[connection signal="quit" from="CanvasLayer/LevelCompleted" to="." method="_on_level_completed_quit"]
+[connection signal="restart" from="CanvasLayer/LevelCompleted" to="." method="_on_level_completed_restart"]

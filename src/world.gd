@@ -6,6 +6,8 @@ extends Node2D
 @onready var garbages_collected = $CanvasLayer2/GarbagesCollected
 @onready var health_collected = $CanvasLayer3/health_collected
 @onready var luw_collected = $CanvasLayer4/luw_collected
+@onready var health = $Health
+@onready var luw = $LUW
 
 
 # Called when the node enters the scene tree for the first time.
@@ -16,7 +18,6 @@ func _ready():
 	Events.luw_collected.connect(show_luw_collected)
 	Events.health_collected.connect(show_health_collected)
 	Events.level_compelted.connect(show_level_completed)
-	
 
 func show_luw_collected():
 	health_collected.hide()

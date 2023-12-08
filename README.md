@@ -7,6 +7,16 @@
 4. Once downloaded, extract the files to your desired location
 5. Then click through the installation processs and enjoy!
 
+## How to edit Source Code
+1. Download the source code from github
+2. Extract the zip file to your desired location
+3. Open godot 4 game engine
+4. Press import
+5. Find the folder
+6. Go into src folder
+7. Click on project.godot
+8. Finish importing
+
 ## Project Planning
 [Commercial](https://youtu.be/CEMK7B4ohYg)
 

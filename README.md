@@ -8,6 +8,8 @@
 5. Then click through the installation processs and enjoy!
 
 ## Project Planning
+[Commercial](https://youtu.be/CEMK7B4ohYg)
+
 [Scrum 1](https://www.youtube.com/watch?v=R1NKNYl2dsw)
 
 [Scrum 2](https://github.com/mtzamanpk/EnviroFormer/tree/main/Scrums/Scrum%202)
